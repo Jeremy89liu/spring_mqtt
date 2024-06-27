@@ -1,0 +1,21 @@
+mqtt:
+  open: true
+  #MQTT-用户名
+  username: admin
+  #MQTT-密码
+  password: admin
+  #MQTT-默认的消息推送主题，实际可在调用接口时指定
+  publish-topics: topicA,topicB,topicC,test
+  #连接超时
+  timeout: 1000
+  #设置会话心跳时间
+  keepalive: 100
+  #MQTT-服务器连接地址，如果有多个，用逗号隔开
+  broker-url: tcp://localhost
+  #MQTT-连接服务器默认客户端ID
+  client-id: emqx_MDc5Nj
+  subscription-topics: topic1,topic2,topic3,test
+
+spring:
+  application:
+    name: spring_mqtt
